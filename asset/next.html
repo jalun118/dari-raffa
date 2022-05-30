@@ -19,28 +19,49 @@
             -webkit-user-select: none;
             -moz-user-select: none;
             user-select: none;
-            background: #ff889c;
+            margin: 0;
+            padding: 0;
             color: #fff;
         }
 
         h2 {
             font-family: 'Plus Jakarta Sans', sans-serif;
             color: rgb(255, 255, 255);
+            margin-top: 0;
+            padding: 5px;
+            margin-left: 10px;
             text-shadow: 3px 3px #558ABB;
         }
 
-        img {
-            width: 70%;
-            height: auto;
+        #vantajs {
+            height: 100vh;
+            width: 100%;
         }
     </style>
 
-    <h2 class="bold">Nah gitu dong jangan sedih sedih,</h2>
-    <h2 class="bold">Makasih yaa jangan lupa ss kirim ke aku</h2>
     <!-- ekspresi admin: .·´¯`(>▂<)´¯`·.  -->
-    <div>
-        <img src="butterfly.webp" alt="butterfly">
+    <div id="vantajs">
+        <h2 class="bold">Nah gitu dong jangan sedih sedih,</h2>
+        <h2 class="bold">Makasih yaa jangan lupa ss kirim ke aku</h2>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r123/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.21/vanta.birds.min.js"></script>
+    <script>
+        VANTA.BIRDS({
+            el: "#vantajs",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 2.00,
+            birdSize: 1.20,
+            speedLimit: 6.00
+        });
+
+        VANTA.BIRDS("#vantajs");
+    </script>
 </body>
 
 </html>
